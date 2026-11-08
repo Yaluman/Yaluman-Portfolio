@@ -1406,3 +1406,171 @@ body {
   top: calc(50% - 14px);
   line-height: 1.2;
 }
+
+/*--------------------------------------------------------------
+# Certifications Section
+--------------------------------------------------------------*/
+.certifications .cert-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 24px;
+  background: var(--surface-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.certifications .cert-image {
+  flex: 0 0 55%;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.certifications .cert-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.certifications .cert-image:hover img {
+  transform: scale(1.03);
+}
+
+.certifications .cert-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.certifications .cert-icon {
+  font-size: 40px;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.certifications .cert-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 12px 0 8px;
+  color: var(--heading-color);
+}
+
+.certifications .cert-issuer {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.certifications .cert-date {
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  margin-bottom: 16px;
+}
+
+.certifications .cert-view {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 15px;
+}
+
+.certifications .cert-view:hover {
+  background: color-mix(in srgb, var(--accent-color), #000 15%);
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .certifications .cert-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .certifications .cert-image {
+    flex: none;
+  }
+
+  .certifications .cert-info {
+    text-align: center;
+  }
+
+  .certifications .cert-info h4 {
+    font-size: 19px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Education Section
+--------------------------------------------------------------*/
+.education .edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px;
+  background: var(--surface-color);
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.education .edu-icon {
+  flex-shrink: 0;
+  font-size: 44px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+.education .edu-info {
+  min-width: 0;
+}
+
+.education .edu-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--heading-color);
+}
+
+.education .edu-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  padding: 3px 12px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+}
+
+.education .edu-school {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.education .edu-date {
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+@media (max-width: 575px) {
+  .education .edu-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 16px;
+  }
+
+  .education .edu-info h4 {
+    font-size: 19px;
+  }
+
+  .education .edu-badge {
+    display: table;
+    margin: 8px auto 0;
+  }
+}
